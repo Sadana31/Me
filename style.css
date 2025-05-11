@@ -1,0 +1,162 @@
+/* Default Styles for Large Screens (1200px and above) */
+.gradient-background {
+    background: linear-gradient(300deg, purple, rgb(71, 21, 162), blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 500px;
+    position: relative;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    color: white;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 220px;
+    right: 40%;
+    font-size: 50px;
+}
+
+.bg {
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+    padding-top: 40px;
+}
+
+.bg > img {
+    width: 400px;
+    height: 400px;
+}
+
+.me {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+/* For Large Screens (1200px and above) */
+@media (max-width: 1200px) {
+    .gradient-background {
+        height: 500px;
+    }
+
+    .head {
+        font-size: 40px;
+        right: 35%;
+    }
+
+    .bg > img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* For Tablets (992px and below) */
+@media (max-width: 992px) {
+    .gradient-background {
+        height: 500px;
+    }
+
+    .head {
+        font-size: 35px;
+        right: 30%;
+    }
+
+    .bg {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .bg > img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .me {
+        width: 300px;
+        height: 300px;
+    }
+    .bg {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        padding-top: 40px;
+    }
+}
+
+/* For Small Tablets / Large Mobiles (768px and below) */
+@media (max-width: 768px) {
+    .gradient-background {
+        height: 400px;
+    }
+
+    .head {
+        font-size: 30px;
+        top: 180px;
+        right: 25%;
+    }
+
+    .bg > img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .me {
+        width: 250px;
+        height: 250px;
+    }
+    .bg {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        padding-top: 40px;
+    }
+}
+
+/* For Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+    .gradient-background {
+        height: 350px;
+    }
+
+    .head {
+        font-size: 25px;
+        top: 150px;
+        right: 20%;
+    }
+
+    .bg {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        padding-top: 40px;
+    }
+    .bg > img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .me {
+        width: 200px;
+        height: 200px;
+    }
+}
